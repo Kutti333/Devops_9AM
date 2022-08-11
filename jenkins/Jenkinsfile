@@ -6,6 +6,11 @@ pipeline{
 			sh "echo Stage1"
 			}
 		}
+		stage('server_details'){
+			steps{
+			sh 'echo "Server name is : `hostname` "'
+			}
+		}
 		
 }
 
